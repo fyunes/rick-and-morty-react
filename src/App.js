@@ -5,8 +5,8 @@ function App() {
   return (
     <>
     <div className="App">     
-    <Rickandmortyfetch />    
-    <Form />    
+      <Rickandmortyfetch />    
+      <Form />    
     </div>
     </>
   );
