@@ -1,14 +1,15 @@
+
 import Rickandmortyfetch from "./components/Rickandmortyfetch";
 import Form from "./components/Form";
 
 function App() {
   return (
-    <>
-    <div className="App">     
+    
+    <div className="col mt-5">     
     <Rickandmortyfetch />    
     <Form />    
     </div>
-    </>
+    
   );
 }
 

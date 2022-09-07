@@ -1,42 +1,44 @@
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap"
 import { useEffect, useState } from "react";
 import Characters from "./Rickandmortycharacters";
-import Pagination from "./Pagination";
+// import Pagination from "./Pagination";
 
 function Rickandmortyfetch() {
 
-    const [characters, setCharacters] = useState([]);
-    const [info, setInfo] = useState({});
+    let [pageNumber, setPageNumber] = useState(1);
+    let [fetchedData, updateFetchedData] = useState([]);
+    let {info, results} = fetchedData;
+    
+    
+    let URL_API = `https://rickandmortyapi.com/api/character/?page=${pageNumber}`;
 
-    const URL_FETCH = "https://rickandmortyapi.com/api/character";
-
-    const fetchCharacters = (url) => {
-        fetch(url)
-            .then(response => response.json())
-            .then(data => {
-                setCharacters(data.results);
-                setInfo(data.info);})
-            .catch(error => console.log(error))
-    };
-
-    const onPrevious = () => {
-        fetchCharacters(info.prev)
-
-    }
-
-    const onNext = () => {
-        fetchCharacters(info.next)
-    }
     useEffect(()=>{
-        fetchCharacters(URL_FETCH);
-    }, [])
+        (async function() {
+            let data = await fetch(URL_API).then(res=>res.json())
+            updateFetchedData(data);
+            
+        })()
+    },[URL_API]);
 
     return (
-        <div>
-            <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext}/>
-            <Characters characters={characters} />
-            <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext}/>
+        <>        
+        <div className="container">
+            <div className="row">
+                <div className="col-3">
+                    <h2>Placeholder</h2>
+                </div>
+                <div className="col-8">
+                    <div className="row">
+                        <Characters results={results}/>
+                    </div>
+                </div>                
+            </div>
         </div>
+        </>       
+        
     )
+
 }
 
 
