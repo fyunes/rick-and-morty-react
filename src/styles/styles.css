@@ -13,3 +13,14 @@
     right: 20px;
     font-size: 17px;
 }
+.searchBar {
+    width: 40%;
+    border-radius: 8px;
+    border: solid 2px green;
+    padding: 10px 15px;
+    box-shadow: 1px 3px 9px;
+}
+.searchBtn {
+    box-shadow: 1px 3px 9px;
+
+}
