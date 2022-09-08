@@ -1,3 +1,4 @@
+
 import {useState} from "react"
 
 const Form = () => {
@@ -79,7 +80,7 @@ const Form = () => {
   const handleChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
-    setInput(values => ({...values, [name]:value}))    
+    setInput(values => ({...values, [name]:value}))
   }
   
   const handleSubmit = (event) => {
@@ -91,21 +92,14 @@ const Form = () => {
     let phoneValue = document.getElementById("phone").value;
     let emailValue = document.getElementById("email").value;
     let messageValue = document.getElementById("message").value;
-    /* let selectedContact = document.querySelector('input[name="contact"]:checked'); */
-  
-    console.log(`Message sent by: "${nameValue}"`);
-    console.log(`Phone: " ${phoneValue} "`);
-    console.log(`Email: " ${emailValue} "`);
-    console.log(`Message: " ${messageValue} "`);
-    console.log(`Contact through: "${input.contact}"`)
-    /* form.reset(); // Reset form in validation js code*/
-  
+    let selectedContact = document.querySelector('input[name="contact"]:checked');
+
     let body = ``;
     body += `
       <div class="portal-img">
-        <img class="portal-img" src="../assets/icons/pngfind.png">
+        <img class="portal-img" src="./img/pngfind.png">
       </div> 
-      <img class="img-title" src="../assets/icons/message.png" alt="Image title message received ">
+      <img class="img-title" src="./img/message.png" alt="Image title message received ">
       <div class="background-mssg">
         <h3 class="text-dimension"> From: Dimensión C-137</h3>
         <div id="text-form">
@@ -118,7 +112,7 @@ const Form = () => {
           <p class = "label-message">Message:</p>
           <p class = "text-message">${messageValue}</p>
           <p class = "label-message">Contact through:
-          <p class = "text-message">${input.contact}</p>
+          <p class = "text-message">${selectedContact}</p>
       </div>
     `;
     document.getElementById('message-area').classList.add('message-area-active');
@@ -128,13 +122,12 @@ const Form = () => {
 
   return (
     <div className="mainFormContainer">
-      <h1>FORM</h1>
       <div className="form-message">
         <div className="form-container">
           <h1>Contact us!</h1>
           <h2>Fill out the form below to send us a message</h2>
 
-          <form className="form" id="form" /* action="" */
+          <form className="form" id="form" 
             onSubmit={handleSubmit}
             >
 
@@ -217,7 +210,7 @@ const Form = () => {
             {/* ************ contact ************ */}
             <p className="label-radio">How would you like us to contact you?</p>
             <div className="input-radio">
-              <input 
+              <input
                 id="contactEmail"
                 type="radio" 
                 name="contact"
