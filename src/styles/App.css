@@ -1,0 +1,227 @@
+/*FORM*/
+
+.form-message {
+  width: 100%;
+  margin: 50px 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form-container {
+  flex-direction: column;
+  background-color: #010326;
+  width: 40%;
+  /* margin-left: 4rem; */
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.form-container h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 1rem;
+}
+
+.form-container h2 {
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.form {
+  position: relative;
+  width: 100%;
+  margin: 1rem 0 2rem 0;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+legend {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.container-form {
+  margin-bottom: 10px;
+}
+
+.label-form {
+  display: block;
+  text-align: left;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.input-container-form {
+  position: relative;
+  transition: .3s ease all;
+
+}
+.input-container-form:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+textarea, #name, #phone, #email {	
+  display: flex;
+  font-size: 1.3rem;
+  width: 100%;
+  padding: .4rem 1rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+input:focus {
+  background-color: #c2dcfa;
+}
+
+textarea {
+  padding-top: 1rem;
+  margin-bottom: 20px;
+  
+}
+
+textarea:focus {
+  background-color: #c2dcfa;
+  background-image: url(../components/icons/text_area.png);
+  background-repeat: no-repeat;
+}
+
+.input-form {
+  position: relative;
+  z-index: 0;
+}
+
+.label-radio {
+  text-align: left;
+}
+.input-radio {
+  justify-content: flex-start;
+  height: 30px;
+}
+
+.input-radio input {
+  margin-right: 1rem;
+}
+
+.input-radio label {
+  padding: 0;
+}
+
+.button-icon {
+  display: inline;
+  font-size: 1.3rem;
+  background-color: #51a629;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #47a603;
+  cursor: pointer;
+}
+.buttons button {
+  font-family: 'Kanit', sans-serif;
+  font-weight: bold;
+  color: #00030d;
+  text-transform: uppercase;
+}
+.button-icon:hover {
+  color: #d5daf2;
+  background-color: #4ca193;
+}
+.button-icon:active {
+  color: #3f445f;
+  background-color: #40867b;
+  box-shadow: none;
+}
+
+/* **** Validation Styles **** */
+
+.input-error {
+  font-size: 12px;
+  color: #F66060;
+	margin-bottom: 0;
+  margin-top: 6px;
+	display: none;
+}
+
+.validation-status {
+  position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+  z-index: 0;
+}
+
+.empty-message-form {
+  position: absolute;
+  height: 45px;
+	line-height: 45px;
+	color: #F66060;
+	padding: 0 15px;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+	display: none;
+}
+
+.empty-message-form-active {
+  display: block;
+}
+
+.empty-message-form p {
+  margin: 0;
+}
+
+.cont-btn-send {
+  position: relative;
+  margin-top: 20px;
+}
+
+.success-message-form {
+  position: absolute;
+  height: 45px;	
+	color: #7dea25;
+  padding: 0 15px;
+  line-height: 45px;
+  text-shadow: 0 0 30px #7dea25;	
+  bottom: 25px;
+  left: 0;
+  right: 0;
+	display: none;
+  z-index: -1;
+}
+
+.success-message-form-active {
+  display: block;
+}
+
+.container-form-correct .validation-status {
+  top: 10px;
+	color: #7dea25;
+	opacity: 1;
+}
+
+.container-form-incorrect .label-form {
+	color: #F66060;
+}
+
+.container-form-incorrect .validation-status {
+  top: 10px;
+	color: #F66060;
+	opacity: 1;
+}
+
+.container-form-incorrect .input-container-form {
+  border-radius: 14px;
+	border: 3px solid #F66060;
+}
