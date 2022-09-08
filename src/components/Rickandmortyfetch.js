@@ -3,15 +3,17 @@ import "bootstrap/dist/js/bootstrap"
 import { useEffect, useState } from "react";
 import Characters from "./Rickandmortycharacters";
 import Pagination from "./Pagination";
+import Search from "./Search";
 
 function Rickandmortyfetch() {
 
     let [pageNumber, setPageNumber] = useState(1);
+    let [search, setSearch] = useState("");
     let [fetchedData, updateFetchedData] = useState([]);
     let {info, results} = fetchedData;
     
     
-    let URL_API = `https://rickandmortyapi.com/api/character/?page=${pageNumber}`;
+    let URL_API = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}`;
 
     useEffect(()=>{
         (async function() {
@@ -22,7 +24,8 @@ function Rickandmortyfetch() {
     },[URL_API]);
 
     return (
-        <>        
+        <>
+        <Search setPageNumber={setPageNumber} setSearch={setSearch}/>          
         <div className="container">
             <div className="row">
                 <div className="col-3">
