@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap"
 import { useEffect, useState } from "react";
 import Characters from "./Rickandmortycharacters";
-// import Pagination from "./Pagination";
+import Pagination from "./Pagination";
 
 function Rickandmortyfetch() {
 
@@ -35,6 +35,7 @@ function Rickandmortyfetch() {
                 </div>                
             </div>
         </div>
+        <Pagination info={info} pageNumber={pageNumber} setPageNumber={setPageNumber} />
         </>       
         
     )
