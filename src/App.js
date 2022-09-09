@@ -4,12 +4,14 @@ import Form from "./components/Form";
 
 function App() {
   return (
-    
-    <div className="col mt-5">     
-    <Rickandmortyfetch />    
-    <Form />    
-    </div>
-    
+    <>
+      <div className="App">
+        <Form />
+      </div>
+      <div className="col mt-5">     
+        <Rickandmortyfetch />      
+      </div>
+    </>
   );
 }
 
