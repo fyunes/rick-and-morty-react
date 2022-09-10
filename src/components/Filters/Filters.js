@@ -3,6 +3,7 @@ import Gender from "../Filters/Categories/Gender"
 import Species from "../Filters/Categories/Species"
 import Status from "../Filters/Categories/Status"
 
+
 const Filters = ({ setStatus, setPageNumber, setGender, setSpecies }) => {
   let clear = () => {
     setStatus("");
@@ -12,7 +13,7 @@ const Filters = ({ setStatus, setPageNumber, setGender, setSpecies }) => {
     window.location.reload(false);    
   };
   return (
-    <div className="col-3">
+    <div className="col-lg-3 col-12 mb-4">
       <div className="text-center fw-bold fs4- mb-2">Filter</div>
       <div
       onClick={clear}
@@ -20,11 +21,12 @@ const Filters = ({ setStatus, setPageNumber, setGender, setSpecies }) => {
         className="text-center text-decoration-underline">
         Clear Filter
       </div>
-      <div className="accordion" id="accordionExample"></div>
+      <div className="accordion mt-2" id="accordionExample">      
       <Status setPageNumber={setPageNumber} setStatus={setStatus} />
       <Species setSpecies={setSpecies} setPageNumber={setPageNumber} />
-      <Gender setGender={setGender} setPageNumber={setPageNumber} />
+      <Gender setGender={setGender} setPageNumber={setPageNumber} />  
       
+      </div>
     </div>
   );
 };
