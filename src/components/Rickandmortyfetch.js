@@ -1,19 +1,23 @@
 import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap/dist/js/bootstrap"
+import 'bootstrap/dist/js/bootstrap'
 import { useEffect, useState } from "react";
 import Characters from "./Rickandmortycharacters";
 import Pagination from "./Pagination";
 import Search from "./Search";
+import Filters from "./Filters/Filters"
 
 function Rickandmortyfetch() {
 
     let [pageNumber, setPageNumber] = useState(1);
     let [search, setSearch] = useState("");
+    let [status, setStatus] = useState("");
+    let [gender, setGender] = useState("");
+    let [species, setSpecies] = useState("");
     let [fetchedData, updateFetchedData] = useState([]);
     let {info, results} = fetchedData;
     
     
-    let URL_API = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}`;
+    let URL_API = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}&status=${status}&gender=${gender}&species=${species}`;
 
     useEffect(()=>{
         (async function() {
@@ -29,7 +33,7 @@ function Rickandmortyfetch() {
         <div className="container">
             <div className="row">
                 <div className="col-3">
-                    <h2>Placeholder</h2>
+                    <Filters setSpecies={setSpecies} setGender={setGender} setStatus={setStatus} setPageNumber={setPageNumber} />
                 </div>
                 <div className="col-8">
                     <div className="row">
