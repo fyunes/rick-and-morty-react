@@ -1,15 +1,13 @@
-
-import Rickandmortyfetch from "./components/Rickandmortyfetch";
-import Form from "./components/Form";
+import Navbar from "./components/Navbar";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    
-    <div className="col mt-5">     
-    <Rickandmortyfetch />    
-    <Form />    
+    <>
+    <div className="App">   
+    <Navbar />  
     </div>
-    
+    </>
   );
 }
 
