@@ -2,7 +2,7 @@ import React from "react";
 
 const Search = ({setPageNumber, setSearch}) => {
     return (
-        <form className="d-flex justify-content-center gap-4 mb-4 mt-4">
+        <form className="d-flex flex-sm-row flex-column align-items-center justify-content-center gap-4 mb-4 mt-4">
             <input
             onChange={charSearch=>{
                 setPageNumber(1);

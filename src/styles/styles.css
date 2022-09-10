@@ -23,6 +23,17 @@
 .searchBtn {
     box-shadow: 2px 5px 10px 0px rgb(0, 0, 0);
 }
+/* RESPONSIVE */
+@media (max-width: 576px) {
+    .rnm-search {
+        width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .rnm-next, .rnm-prev {
+         display:none
+     }
+ }
 .wrapped{
     display: flex;
     justify-content: center;
