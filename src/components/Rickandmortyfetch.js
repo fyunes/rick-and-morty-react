@@ -31,10 +31,8 @@ function Rickandmortyfetch() {
         <>
         <Search setPageNumber={setPageNumber} setSearch={setSearch}/>          
         <div className="container">
-            <div className="row">
-                <div className="col-3">
-                    <Filters setSpecies={setSpecies} setGender={setGender} setStatus={setStatus} setPageNumber={setPageNumber} />
-                </div>
+            <div className="row">                
+                    <Filters setSpecies={setSpecies} setGender={setGender} setStatus={setStatus} setPageNumber={setPageNumber} />                
                 <div className="col-8">
                     <div className="row">
                         <Characters results={results}/>

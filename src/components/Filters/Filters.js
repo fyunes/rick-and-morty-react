@@ -3,6 +3,7 @@ import Gender from "../Filters/Categories/Gender"
 import Species from "../Filters/Categories/Species"
 import Status from "../Filters/Categories/Status"
 
+
 const Filters = ({ setStatus, setPageNumber, setGender, setSpecies }) => {
   let clear = () => {
     setStatus("");
@@ -20,11 +21,12 @@ const Filters = ({ setStatus, setPageNumber, setGender, setSpecies }) => {
         className="text-center text-decoration-underline">
         Clear Filter
       </div>
-      <div className="accordion" id="accordionExample"></div>
+      <div className="accordion mt-2" id="accordionExample">      
       <Status setPageNumber={setPageNumber} setStatus={setStatus} />
       <Species setSpecies={setSpecies} setPageNumber={setPageNumber} />
-      <Gender setGender={setGender} setPageNumber={setPageNumber} />
+      <Gender setGender={setGender} setPageNumber={setPageNumber} />  
       
+      </div>
     </div>
   );
 };

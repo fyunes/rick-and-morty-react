@@ -13,6 +13,16 @@
     right: 20px;
     font-size: 17px;
 }
+.rnm-search {
+    width: 30%;
+    box-shadow: 2px 5px 10px 0px rgb(0, 0, 0);
+    border: solid black 1px;
+    border-radius: 5px;
+    text-indent: 5px;    
+}
+.searchBtn {
+    box-shadow: 2px 5px 10px 0px rgb(0, 0, 0);
+}
 .wrapped{
     display: flex;
     justify-content: center;
