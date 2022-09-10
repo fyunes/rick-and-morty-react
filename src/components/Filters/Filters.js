@@ -9,7 +9,7 @@ const Filters = ({ setStatus, setPageNumber, setGender, setSpecies }) => {
     setPageNumber("");
     setGender("");
     setSpecies("");
-    window.location.reload(false);
+    window.location.reload(false);    
   };
   return (
     <div className="col-3">
