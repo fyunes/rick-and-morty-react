@@ -6,8 +6,8 @@ const Characters = ({results}) => {
     let display;
 
     if (results) {
-        display = results.map(x=>{
-            let {id, name, image, location, status} = x;
+        display = results.map(character=>{
+            let {id, name, image, location, status} = character;
             return( 
             <div key={id} className="col-lg-4 col-md-6 col-12 mb-3 position-relative">
                 <div className="cards d-flex flex-column justify-content-center">
@@ -21,19 +21,14 @@ const Characters = ({results}) => {
                     </div>                    
                 </div>
                 {(()=> {
-                    if( status === "Alive" ) {
-                        return (
-                        <div className="badge bg-success position-absolute">{status}</div> );
-                    }
-                    else if( status === "Dead" ){
-                        return (
-                        <div className="badge bg-danger position-absolute">{status}</div> );
-                    }
-                    else{
-                        return (
-                        <div className="badge bg-secondary position-absolute">{status}</div> );
-                    }
-                })()}                                
+                    return (
+                        <div
+                            className={`badge position-absolute
+                            ${status === "Alive" && "bg-success"}
+                            ${status === "Dead" ? "bg-danger" : "bg-secondary"}`}>
+                            {status}</div>);
+                        }
+                )()}                                
             </div>)
         })
     } else {
