@@ -31,7 +31,7 @@ function Home() {
                             <span className="bottom"></span>
                             <span className="left"></span>
                             <div className="btns-styles-home btn-home-tablet">
-                                <Link to="/">
+                                <Link to="/table">
                                 table
                                 </Link>
                             </div>

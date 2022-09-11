@@ -20,6 +20,7 @@ function MyNavbar() {
                         <Nav className='links'>
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
                             <Nav.Link as={Link} to="/form">Form</Nav.Link>
+                            <Nav.Link as={Link} to="/table">Table</Nav.Link>
                             <Nav.Link as={Link} to="/rickandmorty">Characters</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
