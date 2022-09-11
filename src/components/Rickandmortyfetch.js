@@ -27,7 +27,7 @@ function Rickandmortyfetch() {
     },[URL_API]);
 
     return (
-        <>
+        <div className="main-characters">
         <Search setPageNumber={setPageNumber} setSearch={setSearch}/>          
         <div className="container">
             <div className="row">                
@@ -40,7 +40,7 @@ function Rickandmortyfetch() {
             </div>
         </div>
         <Pagination info={info} pageNumber={pageNumber} setPageNumber={setPageNumber} />
-        </>       
+        </div>       
         
     )
 

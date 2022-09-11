@@ -8,6 +8,7 @@
 }
 .navbar {
     position: fixed;
+    top: 0;
     z-index: 100;
     width: 100%;
     box-shadow: 0 0 10px #00b0c8;
@@ -31,7 +32,10 @@
 text-shadow: 0 0 10px #00b0c8;
 }
 /* **************** */
-
+.main-characters{
+    position: relative;
+    top: 10vw;
+}
 .cards {
     border: 2px solid #0b5ed7;
     border-radius: 10px; 
