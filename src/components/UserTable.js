@@ -3,7 +3,7 @@ import React from "react";
 const UserTable = ({ users }) => {
   return (
     <>
-        <h1 className="text-center my-5">Usuarios</h1>
+        <h1 className="text-center my-5">Users</h1>
         <div className="container">
         <table className="table table-success table-striped">
       <thead>

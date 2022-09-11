@@ -5,7 +5,6 @@ import Home from "./components/Home";
 import Form from "./components/Form";
 import Table from "./components/Table";
 import Rickandmortyfetch from "./components/Rickandmortyfetch";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
