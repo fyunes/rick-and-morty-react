@@ -7,7 +7,7 @@
 <p align="center">Exercise website for React course in Skill Factory - Avalith</p>
 
 <div align="center">
-  <img width="500px" src="./public/img/print_readme.jpg">
+  <img width="700px" src="./public/img/print_readme.jpg">
 </div>
 
 <br>
