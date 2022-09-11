@@ -9,7 +9,7 @@ function MyNavbar() {
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
             <Navbar.Brand>
-              <img src="favicon.ico" alt="Rick and Morty logo." width="40px" />
+              <img src="img/logo.png" alt="Rick and Morty logo." className="logo" />
             </Navbar.Brand>
           </Container>
           <Container>

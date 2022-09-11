@@ -7,11 +7,7 @@
 .mainFormContainer {
   width: 100%;
   height: 900px;
-  margin-top: 50px;/* Quitar cuando de maquete */
   padding: 50px 0;
-  background-image: url(../../public/img/fondo.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .form-message {
   width: 100%;
