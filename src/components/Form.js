@@ -96,23 +96,23 @@ const Form = () => {
 
     let body = ``;
     body += `
-      <div class="portal-img">
-        <img class="portal-img" src="./img/pngfind.png">
+      <div className="portal-img">
+        <img className="portal-img" src="./img/pngfind.png">
       </div> 
-      <img class="img-title" src="./img/message.png" alt="Image title message received ">
-      <div class="background-mssg">
-        <h3 class="text-dimension"> From: Dimensión C-137</h3>
+      <img className="img-title" src="./img/message.png" alt="Image title message received ">
+      <div className="background-mssg">
+        <h3 className="text-dimension"> From: Dimensión C-137</h3>
         <div id="text-form">
-          <p class = "label-message">Message sent by:</p>
-          <p class = "text-message">${nameValue}</p>
-          <p class = "label-message">Phone:</p>
-          <p class = "text-message">${phoneValue}</p>
-          <p class = "label-message">Email:</p>
-          <p class = "text-message">${emailValue}</p>
-          <p class = "label-message">Message:</p>
-          <p class = "text-message">${messageValue}</p>
-          <p class = "label-message">Contact through:
-          <p class = "text-message">${selectedContact}</p>
+          <p className = "label-message">Message sent by:</p>
+          <p className = "text-message">${nameValue}</p>
+          <p className = "label-message">Phone:</p>
+          <p className = "text-message">${phoneValue}</p>
+          <p className = "label-message">Email:</p>
+          <p className = "text-message">${emailValue}</p>
+          <p className = "label-message">Message:</p>
+          <p className = "text-message">${messageValue}</p>
+          <p className = "label-message">Contact through:
+          <p className = "text-message">${selectedContact}</p>
       </div>
     `;
     document.getElementById('message-area').classList.add('message-area-active');
