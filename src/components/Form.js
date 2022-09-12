@@ -117,6 +117,7 @@ const Form = () => {
     `;
     document.getElementById('message-area').classList.add('message-area-active');
     document.getElementById("received-message").innerHTML = body;
+    setInput([{}])
   }
   
 

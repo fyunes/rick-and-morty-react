@@ -21,7 +21,7 @@ function Home() {
             <span className="left"></span>
             <div className="btns-styles-home btn-home-cards"></div>
             <div className="btns-styles-home btn-hover-home-cards"></div>
-            <Link to="/rickandmorty">
+            <Link className="a-cards" to="/rickandmorty">
               <h2>cards</h2>
             </Link>
           </div>
@@ -33,7 +33,7 @@ function Home() {
             <span className="left"></span>
             <div className="btns-styles-home btn-home-table "></div>
             <div className="btns-styles-home btn-hover-home-table"></div>
-            <Link to="/table">
+            <Link className="a-table" to="/table">
             <h2>table</h2>
             </Link>
           </div>
@@ -45,7 +45,7 @@ function Home() {
             <span className="left"></span>
             <div className="btns-styles-home btn-home-form"></div>
             <div className="btns-styles-home btn-hover-home-form"></div>
-            <Link to="/form">
+            <Link className="a-form" to="/form">
             <h2>form</h2>
             </Link>
           </div>
