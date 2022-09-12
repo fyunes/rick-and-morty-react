@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -8,7 +7,7 @@ function Home() {
         <div className="title-home">
           <img
             className="img-title"
-            src="img/title_readme.png"
+            src="img/title-home.png"
             alt="Rick and Morty App  2.0"
           ></img>
         </div>
@@ -21,9 +20,7 @@ function Home() {
             <span className="left"></span>
             <div className="btns-styles-home btn-home-cards"></div>
             <div className="btns-styles-home btn-hover-home-cards"></div>
-            <Link to="/rickandmorty">
-              <h2>Rick and Morty characters</h2>
-            </Link>
+            <h2>cards</h2>
           </div>
 
           <div className="btn-home">
@@ -33,9 +30,7 @@ function Home() {
             <span className="left"></span>
             <div className="btns-styles-home btn-home-table "></div>
             <div className="btns-styles-home btn-hover-home-table"></div>
-            <Link to="/table">
-              <h2>table</h2>
-            </Link>
+            <h2>table</h2>
           </div>
 
           <div className="btn-home">
@@ -45,9 +40,7 @@ function Home() {
             <span className="left"></span>
             <div className="btns-styles-home btn-home-form"></div>
             <div className="btns-styles-home btn-hover-home-form"></div>
-            <Link to="/form">
-              <h2>form</h2>
-            </Link>
+            <h2>form</h2>
           </div>
         </div>
       </div>

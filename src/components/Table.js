@@ -13,12 +13,12 @@ const Table = () => {
       });
   }, []);
   return (
-    <>
+    <div className="main-table">
       <div>
         {
-         users ? <UserTable users={users}/> : <Loading />}
+          users ? <UserTable users={users}/> : <Loading />}
       </div>
-    </>
+    </div>
   );
 };
 
