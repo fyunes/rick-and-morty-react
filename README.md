@@ -1,63 +1,33 @@
 
-<hr>
-<div align="center">
-  <img src="./public/img/title_readme.png">
-</div>
-<hr>
-<p align="center">Exercise website for React course in Skill Factory - Avalith</p>
+---
 
-<div align="center">
-  <img width="700px" src="./public/img/print_readme.jpg">
-</div>
+![Image main title](./public/img/title_readme.png)
 
-<br>
+---
 
-<p align="center">
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=Developing&color=RED&style=for-the-badge"/>
-</p>
+Exercise website for React course in Skill Factory - Avalith
 
-<br>
+![Image landing page](./public/img/print_readme.jpg)
 
-<h3 align="center">Technologies used</h2>
-<div align="center">
+![Icon status project](http://img.shields.io/static/v1?label=STATUS&message=Developing&color=RED&style=for-the-badge)
 
-  ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)  ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)  ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)  	![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
-</div>
+## Technologies used
 
-<h3 align="center">Team</h3>
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)  ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)  ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)  	![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 
-<div align="center">
-  <div align="center">
-    <a src="https://github.com/fyunes">
-      <img src="https://github.com/fyunes.png" width=115 alt="Foto Fran">
-    </a>
-    <a src="https://github.com/MelinaLencina">
-      <img src="https://github.com/MelinaLencina.png" width=115 alt="Foto Mel">
-    </a>
-    <a src="https://github.com/hernandw">
-      <img src="https://github.com/hernandw.png" width=115 alt="Foto Will">
-    </a>
-    <a src="https://github.com/saveasfabri">
-      <img src="https://github.com/saveasfabri.png" width=115 alt="Foto Fabri" >
-    </a>
-    <br>
-    <p>&nbspFRAN&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMEL&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWILL&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFABRI</p>
-  </div>
-</div>
 
-<hr>
+## Team
+
+|![Image Fran](https://github.com/fyunes.png) Fran| ![Image Mel](https://github.com/MelinaLencina.png) Mel | ![Image Will](https://github.com/hernandw.png)Will |![Image Fabri](https://github.com/saveasfabri.png) Fabri|
+| :---: | :---: | :---: | :---: |
+
+---
 
 ## Getting Started with Create React App
-<table>
-  <tr>
-    <td align="center" width="76">
-      <img src="https://create-react-app.dev/img/logo.svg" alt="CRA">
-    </td>
-    <td align="center" width="400">
-      <p> This project was bootstrapped with <a src="https://github.com/facebook/create-react-app">Create React App</a></p>
-    </td>
-  </tr>
-</table>  
+
+|![Logo React](https://miro.medium.com/max/464/1*LxtdsVO0UnRDlrale42riQ.png)|This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)|
+| :---: | :---: |
+  
 
 
 ## Available Scripts
