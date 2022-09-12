@@ -88,31 +88,31 @@ const Form = () => {
     event.target.reset();
     console.log(input);
 
+    
     let nameValue = document.getElementById("name").value;
     let phoneValue = document.getElementById("phone").value;
     let emailValue = document.getElementById("email").value;
     let messageValue = document.getElementById("message").value;
-    let selectedContact = document.querySelector('input[name="contact"]:checked');
 
     let body = ``;
     body += `
-      <div className="portal-img">
-        <img className="portal-img" src="./img/pngfind.png">
+      <div class="portal-img">
+        <img class="img-find" src="./img/pngfind.png">
       </div> 
-      <img className="img-title" src="./img/message.png" alt="Image title message received ">
-      <div className="background-mssg">
-        <h3 className="text-dimension"> From: Dimensión C-137</h3>
+      <img class="img-title" src="./img/message.png" alt="Image title message received ">
+      <div class="background-mssg">
+        <h3 class="text-dimension"> From: Dimensión C-137</h3>
         <div id="text-form">
-          <p className = "label-message">Message sent by:</p>
-          <p className = "text-message">${nameValue}</p>
-          <p className = "label-message">Phone:</p>
-          <p className = "text-message">${phoneValue}</p>
-          <p className = "label-message">Email:</p>
-          <p className = "text-message">${emailValue}</p>
-          <p className = "label-message">Message:</p>
-          <p className = "text-message">${messageValue}</p>
-          <p className = "label-message">Contact through:
-          <p className = "text-message">${selectedContact}</p>
+          <p class = "label-message">Message sent by:</p>
+          <p class = "text-message">${nameValue}</p>
+          <p class = "label-message">Phone:</p>
+          <p class = "text-message">${phoneValue}</p>
+          <p class = "label-message">Email:</p>
+          <p class = "text-message">${emailValue}</p>
+          <p class = "label-message">Message:</p>
+          <p class = "text-message">${messageValue}</p>
+          <p class = "label-message">Contact through:
+          <p class = "text-message">${input.contact}</p>
       </div>
     `;
     document.getElementById('message-area').classList.add('message-area-active');
