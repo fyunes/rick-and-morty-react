@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -20,7 +21,9 @@ function Home() {
             <span className="left"></span>
             <div className="btns-styles-home btn-home-cards"></div>
             <div className="btns-styles-home btn-hover-home-cards"></div>
-            <h2>cards</h2>
+            <Link to="/rickandmorty">
+              <h2>cards</h2>
+            </Link>
           </div>
 
           <div className="btn-home">
@@ -30,7 +33,9 @@ function Home() {
             <span className="left"></span>
             <div className="btns-styles-home btn-home-table "></div>
             <div className="btns-styles-home btn-hover-home-table"></div>
+            <Link to="/table">
             <h2>table</h2>
+            </Link>
           </div>
 
           <div className="btn-home">
@@ -40,7 +45,9 @@ function Home() {
             <span className="left"></span>
             <div className="btns-styles-home btn-home-form"></div>
             <div className="btns-styles-home btn-hover-home-form"></div>
+            <Link to="/form">
             <h2>form</h2>
+            </Link>
           </div>
         </div>
       </div>
