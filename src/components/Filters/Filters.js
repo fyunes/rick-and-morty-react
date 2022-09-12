@@ -5,20 +5,27 @@ import Status from "../Filters/Categories/Status"
 
 
 const Filters = ({ setStatus, setPageNumber, setGender, setSpecies }) => {
-  let clear = () => {
+  const clear = () => {
     setStatus("");
     setPageNumber("");
     setGender("");
     setSpecies("");
-    window.location.reload(false);    
+    unChecked();        
   };
+  const unChecked = () => {
+    const radioBtn = document.querySelectorAll("input[type='radio']");
+    radioBtn.forEach(radioBtn => {
+      if(radioBtn.checked===true)
+      radioBtn.checked = false
+    })
+  }
   return (
     <div className="col-lg-3 col-12 mb-4">
-      <div className="text-center fw-bold fs4- mb-2">Filter</div>
+      <div className="text-center fw-bold fs4- mb-2 filter">Filter</div>
       <div
-      onClick={clear}
+      onClick={clear}      
         style={{ cursor: "pointer" }}
-        className="text-center text-decoration-underline">
+        className="text-center text-decoration-underline clear-filter">
         Clear Filter
       </div>
       <div className="accordion mt-2" id="accordionExample">      

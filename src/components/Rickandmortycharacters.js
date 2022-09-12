@@ -1,4 +1,6 @@
 import React from "react";
+import '../styles/styles.css'
+
 
 const Characters = ({results}) => {
     let display;
@@ -9,8 +11,8 @@ const Characters = ({results}) => {
             return( 
             <div key={id} className="col-lg-4 col-md-6 col-12 mb-3 position-relative">
                 <div className="cards d-flex flex-column justify-content-center">
-                    <img src={image} alt="" className="img-fluid" />
-                    <div className="content">
+                    <img src={image} alt={image} className="img-fluid" />
+                    <div className="content rnm-info">
                         <div className="fs-4 fw-bold">{name}</div>
                         <div className="">
                             <div className="fs-6">Last location</div>
@@ -30,7 +32,7 @@ const Characters = ({results}) => {
             </div>)
         })
     } else {
-            display = "No characters found"
+            display = <img src="img/404_nocharfound_RickAndMorty.png" alt="404 No Character Found"/>
         }
     
     return <div className="row">{display}</div>;

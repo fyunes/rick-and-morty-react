@@ -18,7 +18,7 @@ const Pagination = ({info, pageNumber, setPageNumber }) => {
         nextClassName="btn btn-primary rnm-next"
         previousClassName="btn btn-primary rnm-prev"
         pageClassName="page-item"
-        pageLinkClassName="page-link"
+        pageLinkClassName="page-link rnm-pageLink"
         marginPagesDisplayed={width < 576 ? 1 : 2}
         pageRangeDisplayed={width < 576 ? 1 : 2}
         activeClassName="active"
