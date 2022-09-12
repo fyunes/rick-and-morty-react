@@ -38,13 +38,12 @@
 .form-container h1 {
   font-size: 2.5rem;
   font-weight: 600;
-  margin: 1rem;
+  text-align: center;
   align-items: center;
 }
 
 .form-container h2 {
   font-size: 1rem;
-  margin: 1rem;
   text-align: center;
 }
 
@@ -61,20 +60,18 @@
 legend {
   font-size: 1.3rem;
   font-weight: bold;
-  margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
 }
 
 .container-form {
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 }
 
 .label-form {
   display: block;
   text-align: left;
   padding: 5px;
-  margin-top: 10px;
 }
 
 .input-container-form {
@@ -104,7 +101,6 @@ input:focus {
 
 textarea {
   padding-top: 1rem;
-  margin-bottom: 20px;
   height: 200px;
   
 }
@@ -139,14 +135,14 @@ textarea:focus {
 .button-icon {
   display: inline;
   font-size: 1.3rem;
-  background-color: #51a629;
+  color: #ffffff;
+  background-color: #025a66dc;
   width: 100%;
-  margin-top: 2rem;
   padding: 0.5rem;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px #47a603;
+  border: 2px solid rgba(255, 255, 255, 0.63);
+  box-shadow: 0 0 15px #ffffff; 
   cursor: pointer;
+  outline: none;
 }
 .buttons button {
   font-family: 'Kanit', sans-serif;
@@ -156,12 +152,14 @@ textarea:focus {
 }
 .button-icon:hover {
   color: #d5daf2;
-  background-color: #4ca193;
+  background-color: #025a66b4;
+  transform: scale(1.05);
 }
 .button-icon:active {
-  color: #3f445f;
-  background-color: #40867b;
+  color: #676a7a;
+  background-color: #00424bdc;
   box-shadow: none;
+  transform: scale(1);
 }
 
 /* **** Validation Styles **** */
