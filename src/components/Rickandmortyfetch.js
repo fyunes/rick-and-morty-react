@@ -28,18 +28,18 @@ function Rickandmortyfetch() {
 
     return (
         <div className="main-characters">
-        <Search setPageNumber={setPageNumber} setSearch={setSearch}/>          
-        <div className="container">
-            <div className="row">                
-                    <Filters setSpecies={setSpecies} setGender={setGender} setStatus={setStatus} setPageNumber={setPageNumber} />                
-                <div className="col-lg-8 col-12">
-                    <div className="row">
-                        <Characters results={results}/>
-                    </div>
-                </div>                
+            <Search setPageNumber={setPageNumber} setSearch={setSearch}/>          
+            <div className="container">
+                <div className="row">                
+                        <Filters setSpecies={setSpecies} setGender={setGender} setStatus={setStatus} setPageNumber={setPageNumber} />                
+                    <div className="col-lg-8 col-12">
+                        <div className="row">
+                            <Characters results={results}/>
+                        </div>
+                    </div>                
+                </div>
             </div>
-        </div>
-        <Pagination info={info} pageNumber={pageNumber} setPageNumber={setPageNumber} />
+            <Pagination info={info} pageNumber={pageNumber} setPageNumber={setPageNumber} />
         </div>       
         
     )
