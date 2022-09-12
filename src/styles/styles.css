@@ -407,3 +407,7 @@ body {
 .checkedBtn[type="radio"] {
   display: none;
 }
+
+.rnm-row {  
+  width: 100%;
+}
