@@ -80,7 +80,7 @@ legend {
 
 }
 .input-container-form:focus {
-	border: 3px solid #0075FF;
+	border: 3px solid #00b0c8;
 	outline: none;
 	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
 }
@@ -270,14 +270,15 @@ textarea:focus {
 .portal-img {
   width: 100%;
   box-sizing: border-box;
+  margin-bottom: -20px;
 }
 
-.portal-img img {
+.img-find {
   width: 100%;
 }
 
 .img-title {
-  width: 70%;
+  width: 100%;
   margin-bottom: 10px;
 }
 
@@ -297,9 +298,10 @@ textarea:focus {
 }
 
 .text-dimension {
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin-top: 5px;
-  text-shadow: 1px 1px 2px #051f39;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px #031220;
 }  
 
 #text-form {
@@ -311,12 +313,15 @@ textarea:focus {
 }
 
 .label-message {
-  font-size: 0.8rem;
-  color: #22a2bd;
+  font-size: 0.9rem;
+  color: #81ff4ffb;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.685);
+  font-weight: 500;
   margin: 0;
 }
 
 .text-message {
+  letter-spacing:2px;
   font-weight: 500;
   text-shadow: 1px 1px 4px #051f39;
 }
