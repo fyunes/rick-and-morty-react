@@ -1,4 +1,11 @@
 /* ******* Navbar ****** */
+.main-navbar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0 0 10px #00b0c8;
+}
 .logo {
     width: 30%;
     margin-left: 5vw;
@@ -6,13 +13,13 @@
 .container-navbar {
     width: 100vw;
 }
-.navbar {
+/* .navbar {
     position: fixed;
     top: 0;
     z-index: 100;
     width: 100%;
     box-shadow: 0 0 10px #00b0c8;
-}
+} */
 .navbar-collapse {
     margin-right: 5vw;
     display: flex;
@@ -81,6 +88,15 @@ body {
     justify-content:center;
     flex-wrap: wrap;
     z-index: 2;
+}
+.a-form {
+    width: 100%;
+}
+.a-table {
+    width: 100%;
+}
+.a-cards {
+    width: 100%;
 }
 .container-btns-home .btn-home {
     text-align: center;
@@ -379,23 +395,28 @@ body {
     color: white;
 }
 
-/* ******* Tble ****** */
+/* ******* Table ****** */
 
 .main-table {
     position: relative;
-    padding-top: 6vw;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-image: url(./../../public/img/bg-main-table.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
     background-attachment: fixed;
 }
+.text-center {
+    color: #ffffff;
+}
+
 
 /* ******* Characters ****** */
 
 .main-characters{
     position: relative;
-    padding-top: 10vw;
+    padding-top: 150px;
     background-image: url(./../../public/img/bg-main-characters.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -520,4 +541,23 @@ body {
 	background-color: #42b19c !important;
 	color :#fff  !important;
     box-shadow: 5px 10px 5px #000000 !important;
+}
+
+.text-footer a {
+  font-size: 1rem;
+  font-weight: 400;
+    color: #fff;
+}
+
+.text-footer a:hover {
+    color: #00b0c8;
+    text-shadow: 0px 0px 5px #00b0c850;
+    right: 0;
+    left: 0;
+    font-size: 1.03rem;
+    transition: 0.3s;
+  }
+
+.col img{
+    margin-right: 1rem;
 }
