@@ -1,6 +1,7 @@
-import React from 'react';
+import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Form from "./components/Form";
 import Table from "./components/Table";
@@ -18,6 +19,7 @@ function App() {
           <Route path="/rickandmorty" element={<Rickandmortyfetch />} />
           <Route path="/*" element={<Navigate to="/" />} />
         </Routes>
+        <Footer />
       </div>
     </>
   );
