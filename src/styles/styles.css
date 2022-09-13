@@ -796,6 +796,19 @@ ul.pagination.my-4 {
   color: #fff !important;
   box-shadow: 5px 10px 5px #000000 !important;
 }
+/******* 404 Page not found  *******/
+.notfound{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, #22696e 0%, #304554 70%, #212529 100%);
+}
+.notfound img{
+  margin-top: 2rem;
+  width: 50%;
+}
 /******* Footer *******/
 .text-footer a {
   font-size: 1rem;
