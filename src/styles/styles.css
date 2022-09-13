@@ -22,9 +22,7 @@
   display: flex;
   flex-wrap: nowrap;
 }
-.container {
-  display: flex;
-}
+
 .nav-link {
   font-size: 1.2em;
 }
