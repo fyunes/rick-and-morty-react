@@ -2,8 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
+    <>
       <footer className="text-white py-3 bg-dark">
+        <div class="container">
         <div className="row mx-auto">
           <div className="col font-weight-bold">
             <img
@@ -50,8 +51,9 @@ const Footer = () => {
             </a>
           </div>
         </div>
+        </div>
       </footer>
-    </div>
+    </>
   );
 };
 
