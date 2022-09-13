@@ -1,6 +1,4 @@
 import React from "react";
-import '../styles/styles.css'
-
 
 const Characters = ({results}) => {
     let display;

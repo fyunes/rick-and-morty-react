@@ -4,12 +4,16 @@ import { Link } from "react-router-dom";
 
 function MyNavbar() {
   return (
-    <div className="main-navbar">
-      <>
+    <>
+      <div className="main-navbar">
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
             <Navbar.Brand>
-              <img src="img/logo.png" alt="Rick and Morty logo." className="logo" />
+              <img
+                src="img/logo.png"
+                alt="Rick and Morty logo."
+                className="logo"
+              />
             </Navbar.Brand>
           </Container>
           <Container>
@@ -32,8 +36,9 @@ function MyNavbar() {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-      </>
-    </div>
+      </div>
+    </>
   );
 }
+
 export default MyNavbar;
