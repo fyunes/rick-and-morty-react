@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import title from './../assets/images/title-home.png'
+import rick from './../assets/images/img-rick_home.png'
+import rick2 from './../assets/images/img-rick_home-2.png'
 
 function Home() {
   return (
@@ -8,7 +11,7 @@ function Home() {
         <div className="title-home">
           <img
             className="img-title"
-            src="img/title-home.png"
+            src={title}
             alt="Rick and Morty App  2.0"
           ></img>
         </div>
@@ -53,8 +56,8 @@ function Home() {
       </div>
 
       <div className="img-home">
-        <img className="rick" src="img/img-rick_home.png" alt="Rick" />
-        <img className="rick-2" src="img/img-rick_home-2.png" alt="Rick" />
+        <img className="rick" src={rick} alt="Rick" />
+        <img className="rick-2" src={rick2} alt="Rick" />
       </div>
     </div>
   );
