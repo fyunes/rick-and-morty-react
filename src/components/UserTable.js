@@ -5,7 +5,7 @@ const UserTable = ({ users }) => {
     <>
         <h1 className="text-center my-5">Users</h1>
         <div className="container">
-        <table className="table table-success table-striped">
+        <table className="table table-hover table-success table-striped">
       <thead>
         <tr>
           <th scope="col">ID</th>
