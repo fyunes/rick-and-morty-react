@@ -9,7 +9,7 @@ Exercise website for React course in Skill Factory - Avalith
 
 ![Image landing page](./public/img/print_readme.jpg)
 
-![Icon status project](http://img.shields.io/static/v1?label=STATUS&message=Developing&color=RED&style=for-the-badge)
+![Icon status project](http://img.shields.io/static/v1?label=STATUS&message=In%20development&color=RED&style=for-the-badge)
 
 ## Technologies used
 
@@ -23,82 +23,121 @@ Exercise website for React course in Skill Factory - Avalith
 
 ---
 
-## Getting Started with Create React App
+## Welcome to our project
 
-|![Logo React](https://miro.medium.com/max/464/1*LxtdsVO0UnRDlrale42riQ.png)|This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)|
+|![Logo React](https://miro.medium.com/max/464/1*LxtdsVO0UnRDlrale42riQ.png)|This project was created with [Create React App](https://github.com/facebook/create-react-app)|
 | :---: | :---: |
   
 
 
-## Available Scripts
+## How to run our site
 
-In the project directory, you can run:
+For this tutorial on how to set up and run our project we recommend using Visual Studio Code with its integrated terminal.
+
+##### One of the easiest ways to do this, is to do as follows:
+
+First copy the repository HTTPS address.
+
+|![HTTPS Address](https://cdn.discordapp.com/attachments/854123718753779762/1019062599503065139/unknown.png)
+
+Then we should position ourselves in the directory we want our folder to be downloaded
+
+Next, clone our repository using git clone + the HTTPS address.
+Type in the Git terminal:
+
+```
+git clone https://github.com/fyunes/skillfactory-second-project.git 
+```
+
+A folder will be created, access it by typing the following line in the terminal:
+
+```
+cd skillfactory-second-project
+```
+
+After that, you should install all dependencies for it to work properly running the following command:
+
+```
+npm install
+```
+
+If you do not wish to install them globally and to reduce long time issues you may also run:
+
+```
+npx install
+```
+
+###### Now you simply must enter
 
 ```
 npm start
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-npm test
 ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Then the app should start running smoothly without any issues.
 
-```
-npm run build
-```
+### Happy hacking!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* * *
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The science behind our site!
+----------------------------
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+We are a team of four members. We decided to use an Agile methodology (SCRUM) for the development of this project. 
 
-```
-npm run eject
-```
+![Agile methodology](https://cdn.discordapp.com/attachments/854123718753779762/1019067397623255150/unknown.png) 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Our method consisted in:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Having a daily meeting on Discord, where we talked about what we wanted to develop and how we could achieve our goals for the site. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Using live coding and pair programming as our tools for fixing bugs and helping each others when difficulties arrived. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Using text-channels on Discord to discuss changes and errors on our code. One of our most important tools was constant feedback among the team.
 
-## Learn More
+# Project structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Navbar and footer:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Our responsive navbar uses React-Router for navigation, instead of the regular HTML `<a>` tags. Using the navbar, you can go to Home, Form, Table, and Characters. 
 
-### Code Splitting
+Our footer shows you who developed the project, and uses `<a>` tags that allow you to check out the team members' GitHub profiles without leaving our page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+###### Special thanks to Mel and Fabri! 
 
 
-### `npm run build` fails to minify
+#### Home page:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+We designed a responsive landing page for the user to navigate the site. 
+On this page, you can see 3 clickable buttons (cards, table, form), and it's Rick and Morty themed!  
+
+###### Special thanks to Mel and Fabri! 
+
+#### Form page:
+
+Our form allows you to send a message which is printed on the site (DOM) when you press the send button. It includes styled validation on each input field (Name, Phone, Email). 
+Try sending something and check out how cool our form is!
+
+###### Special thanks to Fabri! 
+
+#### Table page:
+
+This table shows you info from the `jsonplaceholder.typicode.com/users` API; it simulates a group of users and their data: Name, Email, City, Phone, Website, and ID. It was developed using Axios! 
+
+###### Special thanks to Williams! 
+
+#### Characters page:
+
+This is our characters page! Every creature from the Rick and Morty series is here, thanks to the `rickandmortyapi.com` API. 
+You can use the search bar to look for something in particular! You can also use filters if you're being very specific. 
+###### Try writing "Rick" and check out how many Ricks you can find! Isn't that awesome? 
+ 
+Check out all the characters using the navigation buttons below the cards. Don't worry if it takes some time to load, you'll know when that happens, we got you covered with our loader animation! 
+
+###### Special thanks to Fran, our Team Lead and SCRUM Master! 
+
+----------------------------
+
+### Thank you for visiting our project!  
+###### Try not to fall into a portal when leaving 
+
+![Good Bye gif](https://media3.giphy.com/media/vhhRM3XldbbQA/giphy.gif?cid=790b7611d799f70583b2be3506395516af88760da255f5a5&rid=giphy.gif&ct=g)
