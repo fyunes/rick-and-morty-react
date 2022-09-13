@@ -63,5 +63,4 @@ function Rickandmortyfetch() {
 
 }
 
-
 export default Rickandmortyfetch;
