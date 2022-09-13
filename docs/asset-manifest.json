@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.059d8e66.css",
+    "main.js": "/static/js/main.16cfb9a5.js",
+    "static/media/bg-main-form.jpg": "/static/media/bg-main-form.df759d67b6a781449cd3.jpg",
+    "static/media/bg-main-characters.jpg": "/static/media/bg-main-characters.6ffe3350bf3719a6e700.jpg",
+    "static/media/bg-main-table.jpg": "/static/media/bg-main-table.3257862cc2dae9c1a23f.jpg",
+    "static/media/text_area.png": "/static/media/text_area.75fe60340854eb4b019a.png",
+    "static/media/bg_hover_button-form.jpg": "/static/media/bg_hover_button-form.a8fe952f0b528930d4db.jpg",
+    "static/media/bg_hover_button-cards.jpg": "/static/media/bg_hover_button-cards.3b637c74d851abbab079.jpg",
+    "static/media/bg_button-form.jpg": "/static/media/bg_button-form.197c846c281fee0a3b08.jpg",
+    "static/media/bg_button-cards.jpg": "/static/media/bg_button-cards.3224fcd92df2fcf32b37.jpg",
+    "static/media/bg_hover_button-table.jpg": "/static/media/bg_hover_button-table.1da43f59cbef3f7f36e8.jpg",
+    "static/media/bg_button-table.jpg": "/static/media/bg_button-table.2da1ed96f4c245dd9b23.jpg",
+    "index.html": "/index.html",
+    "main.059d8e66.css.map": "/static/css/main.059d8e66.css.map",
+    "main.16cfb9a5.js.map": "/static/js/main.16cfb9a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.059d8e66.css",
+    "static/js/main.16cfb9a5.js"
+  ]
+}
