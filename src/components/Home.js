@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import title from './../assets/images/title-home.png'
-import rick from './../assets/images/img-rick_home.png'
-import rick2 from './../assets/images/img-rick_home-2.png'
+import title from "../assets/images/title-home.png";
+import rick from "../assets/images/img-rick_home.png";
+import rick2 from "../assets/images/img-rick_home-2.png";
 
 function Home() {
   return (
@@ -37,7 +37,7 @@ function Home() {
             <div className="btns-styles-home btn-home-table "></div>
             <div className="btns-styles-home btn-hover-home-table"></div>
             <Link className="a-table" to="/table">
-            <h2>table</h2>
+              <h2>table</h2>
             </Link>
           </div>
 
@@ -49,7 +49,7 @@ function Home() {
             <div className="btns-styles-home btn-home-form"></div>
             <div className="btns-styles-home btn-hover-home-form"></div>
             <Link className="a-form" to="/form">
-            <h2>form</h2>
+              <h2>form</h2>
             </Link>
           </div>
         </div>
