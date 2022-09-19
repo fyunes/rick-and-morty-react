@@ -826,3 +826,20 @@ ul.pagination.my-4 {
 .col img {
   margin-right: 1rem;
 }
+
+@media (min-width:1025px) {
+.noCharFound {
+  margin-bottom: 7vh;
+  margin-top: 8vh;
+  margin-left: 2rem;
+}
+.rnm-row {
+  min-height: 55.2vh;
+}
+.main-home {
+  max-height: 93.4vh;
+}
+.main-table {
+  min-height: 93.4vh;  
+}
+}

@@ -30,7 +30,7 @@ const Characters = ({results}) => {
             </div>)
         })
     } else {
-            display = <img src="img/404_nocharfound_RickAndMorty.png" alt="404 No Character Found"/>
+            display = <img className="noCharFound" src="img/404_nocharfound_RickAndMorty.png" alt="404 No Character Found"/>
         }
     
     return <div className="row">{display}</div>;

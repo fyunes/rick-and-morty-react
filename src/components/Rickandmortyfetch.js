@@ -47,7 +47,7 @@ function Rickandmortyfetch() {
                 <div className="row rnm-row">
                     <Filters setSpecies={setSpecies} setGender={setGender} setStatus={setStatus} setPageNumber={setPageNumber} />
                     <div className="col-lg-8 col-12">
-                        <div className="row">                            
+                        <div className="row rnm-row">                            
                             {loading ? (<div className="spinner-border m-5 rnm-spinner" role="status">
                             <span className="visually-hidden">Loading...</span>
                             </div> ) : <Characters results={results} /> 
